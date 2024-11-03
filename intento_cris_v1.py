@@ -35,7 +35,7 @@ plt.show()
 
 # Gráfico de transformada de Fourier en el rango de -50 a +50 Hz
 # Seleccionar solo el rango deseado
-mask = (fft_freq >= -1000) & (fft_freq <= 1000)
+mask = (fft_freq >= -50) & (fft_freq <= 50)
 fft_freq_rango = fft_freq[mask]
 fft_values_rango = np.abs(fft_values[mask])
 
